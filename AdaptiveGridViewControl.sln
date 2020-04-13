@@ -1,0 +1,67 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29924.181
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AdaptiveGridViewControl", "AdaptiveGridViewControl\AdaptiveGridViewControl.vcxproj", "{6BA2A104-20B1-4446-A8AC-DDE801199116}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleApp", "SampleApp\SampleApp.csproj", "{73000459-D77E-4857-A920-C05D92F46A2D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|ARM = Debug|ARM
+		Debug|ARM64 = Debug|ARM64
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|ARM = Release|ARM
+		Release|ARM64 = Release|ARM64
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6BA2A104-20B1-4446-A8AC-DDE801199116}.Debug|ARM.ActiveCfg = Debug|ARM
+		{6BA2A104-20B1-4446-A8AC-DDE801199116}.Debug|ARM.Build.0 = Debug|ARM
+		{6BA2A104-20B1-4446-A8AC-DDE801199116}.Debug|ARM64.ActiveCfg = Debug|Win32
+		{6BA2A104-20B1-4446-A8AC-DDE801199116}.Debug|x64.ActiveCfg = Debug|x64
+		{6BA2A104-20B1-4446-A8AC-DDE801199116}.Debug|x64.Build.0 = Debug|x64
+		{6BA2A104-20B1-4446-A8AC-DDE801199116}.Debug|x86.ActiveCfg = Debug|Win32
+		{6BA2A104-20B1-4446-A8AC-DDE801199116}.Debug|x86.Build.0 = Debug|Win32
+		{6BA2A104-20B1-4446-A8AC-DDE801199116}.Release|ARM.ActiveCfg = Release|ARM
+		{6BA2A104-20B1-4446-A8AC-DDE801199116}.Release|ARM.Build.0 = Release|ARM
+		{6BA2A104-20B1-4446-A8AC-DDE801199116}.Release|ARM64.ActiveCfg = Release|Win32
+		{6BA2A104-20B1-4446-A8AC-DDE801199116}.Release|x64.ActiveCfg = Release|x64
+		{6BA2A104-20B1-4446-A8AC-DDE801199116}.Release|x64.Build.0 = Release|x64
+		{6BA2A104-20B1-4446-A8AC-DDE801199116}.Release|x86.ActiveCfg = Release|Win32
+		{6BA2A104-20B1-4446-A8AC-DDE801199116}.Release|x86.Build.0 = Release|Win32
+		{73000459-D77E-4857-A920-C05D92F46A2D}.Debug|ARM.ActiveCfg = Debug|ARM
+		{73000459-D77E-4857-A920-C05D92F46A2D}.Debug|ARM.Build.0 = Debug|ARM
+		{73000459-D77E-4857-A920-C05D92F46A2D}.Debug|ARM.Deploy.0 = Debug|ARM
+		{73000459-D77E-4857-A920-C05D92F46A2D}.Debug|ARM64.ActiveCfg = Debug|ARM64
+		{73000459-D77E-4857-A920-C05D92F46A2D}.Debug|ARM64.Build.0 = Debug|ARM64
+		{73000459-D77E-4857-A920-C05D92F46A2D}.Debug|ARM64.Deploy.0 = Debug|ARM64
+		{73000459-D77E-4857-A920-C05D92F46A2D}.Debug|x64.ActiveCfg = Debug|x64
+		{73000459-D77E-4857-A920-C05D92F46A2D}.Debug|x64.Build.0 = Debug|x64
+		{73000459-D77E-4857-A920-C05D92F46A2D}.Debug|x64.Deploy.0 = Debug|x64
+		{73000459-D77E-4857-A920-C05D92F46A2D}.Debug|x86.ActiveCfg = Debug|x86
+		{73000459-D77E-4857-A920-C05D92F46A2D}.Debug|x86.Build.0 = Debug|x86
+		{73000459-D77E-4857-A920-C05D92F46A2D}.Debug|x86.Deploy.0 = Debug|x86
+		{73000459-D77E-4857-A920-C05D92F46A2D}.Release|ARM.ActiveCfg = Release|ARM
+		{73000459-D77E-4857-A920-C05D92F46A2D}.Release|ARM.Build.0 = Release|ARM
+		{73000459-D77E-4857-A920-C05D92F46A2D}.Release|ARM.Deploy.0 = Release|ARM
+		{73000459-D77E-4857-A920-C05D92F46A2D}.Release|ARM64.ActiveCfg = Release|ARM64
+		{73000459-D77E-4857-A920-C05D92F46A2D}.Release|ARM64.Build.0 = Release|ARM64
+		{73000459-D77E-4857-A920-C05D92F46A2D}.Release|ARM64.Deploy.0 = Release|ARM64
+		{73000459-D77E-4857-A920-C05D92F46A2D}.Release|x64.ActiveCfg = Release|x64
+		{73000459-D77E-4857-A920-C05D92F46A2D}.Release|x64.Build.0 = Release|x64
+		{73000459-D77E-4857-A920-C05D92F46A2D}.Release|x64.Deploy.0 = Release|x64
+		{73000459-D77E-4857-A920-C05D92F46A2D}.Release|x86.ActiveCfg = Release|x86
+		{73000459-D77E-4857-A920-C05D92F46A2D}.Release|x86.Build.0 = Release|x86
+		{73000459-D77E-4857-A920-C05D92F46A2D}.Release|x86.Deploy.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7C52CB4C-27B8-4607-9ED5-6898EF1A9B56}
+	EndGlobalSection
+EndGlobal

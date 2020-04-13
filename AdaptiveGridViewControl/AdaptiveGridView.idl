@@ -1,0 +1,20 @@
+namespace AdaptiveGridViewControl
+{
+	runtimeclass AdaptiveGridView : Windows.UI.Xaml.Controls.GridView
+	{
+		AdaptiveGridView();
+		static Windows.UI.Xaml.DependencyProperty ItemClickCommandProperty{ get; };
+		static Windows.UI.Xaml.DependencyProperty ItemHeightProperty{ get; };
+		static Windows.UI.Xaml.DependencyProperty OneRowModeEnabledProperty{ get; };
+		static Windows.UI.Xaml.DependencyProperty ItemWidthProperty{ get; };
+		static Windows.UI.Xaml.DependencyProperty DesiredWidthProperty{ get; };
+		static Windows.UI.Xaml.DependencyProperty StretchContentForSingleRowProperty{ get; };
+
+		Windows.UI.Xaml.Input.ICommand ItemClickCommand;
+		Double ItemHeight;
+		Boolean OneRowModeEnabled;
+		Double ItemWidth;
+		Double DesiredWidth;
+		Boolean StretchContentForSingleRow;
+	}
+}

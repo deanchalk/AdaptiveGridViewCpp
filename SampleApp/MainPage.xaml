@@ -1,0 +1,73 @@
+﻿<Page
+    x:Class="SampleApp.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:adaptivegridviewcontrol="using:AdaptiveGridViewControl"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="using:SampleApp"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+    mc:Ignorable="d">
+
+    <Page.Resources>
+        <DataTemplate x:Key="PhotosTemplate">
+            <Grid
+                Background="White"
+                BorderBrush="Black"
+                BorderThickness="1">
+                <Image
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Source="{Binding Thumbnail}"
+                    Stretch="UniformToFill" />
+            </Grid>
+        </DataTemplate>
+
+        <local:BoolToVisibilityConverter x:Key="BoolToVisibilityConverter" />
+    </Page.Resources>
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="Auto" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <TextBlock x:Name="SelectedItemCountTextBlock" />
+        <adaptivegridviewcontrol:AdaptiveGridView
+            Name="AdaptiveGridViewCtrl"
+            Grid.Row="1"
+            DesiredWidth="{Binding ElementName=DesiredWidthSlider, Path=Value}"
+            IsItemClickEnabled="{Binding ElementName=ItemClickToggle, Path=IsChecked}"
+            ItemHeight="{Binding ElementName=HeightSlider, Path=Value, Mode=TwoWay}"
+            ItemTemplate="{StaticResource PhotosTemplate}"
+            OneRowModeEnabled="{Binding ElementName=OneRowToggle, Path=IsChecked}"
+            SelectionMode="Single" />
+
+        <StackPanel
+            Grid.RowSpan="2"
+            Grid.Column="1"
+            Margin="20">
+            <TextBlock Margin="5" Text="Desired Width" />
+            <Slider
+                x:Name="DesiredWidthSlider"
+                Margin="5"
+                Maximum="500"
+                Minimum="50"
+                Value="200" />
+            <TextBlock Text="Item Height" />
+            <Slider
+                x:Name="HeightSlider"
+                Margin="5"
+                Maximum="500"
+                Minimum="50"
+                Value="200" />
+            <TextBlock Margin="5" Text="Item Click Enabled" />
+            <ToggleButton x:Name="ItemClickToggle" Margin="5" />
+            <TextBlock Margin="5" Text="One Row Mode enabled" />
+            <ToggleButton x:Name="OneRowToggle" Margin="5" />
+        </StackPanel>
+    </Grid>
+</Page>
